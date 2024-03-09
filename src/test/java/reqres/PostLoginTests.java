@@ -44,7 +44,7 @@ public class PostLoginTests {
     }
 
     @Test
-    public void putLoginSuccessfulStatusCodeInvalidValues() {
+    public void putLoginUnsuccessfulStatusCodeInvalidValues() {
 
         Map<String, String> body = new HashMap<>();
         body.put("email", "eve.holt@reqres.in");
@@ -60,7 +60,7 @@ public class PostLoginTests {
     }
 
     @Test
-    public void putLoginSuccessfulResponseTextInvalidValues() {
+    public void putLoginUnsuccessfulResponseTextInvalidValues() {
 
         Map<String, String> body = new HashMap<>();
         body.put("email", "eve.holt@reqres.in");
@@ -104,7 +104,7 @@ public class PostLoginTests {
     }
 
     @Test
-    public void putLoginSuccessfulResponseTextUnregisteredUser() {
+    public void putLoginUnsuccessfulResponseTextUnregisteredUser() {
         Map<String, String> body = new HashMap<>();
         body.put("email", "lihtenvald95@rt.er");
         body.put("password", "qwerty");
